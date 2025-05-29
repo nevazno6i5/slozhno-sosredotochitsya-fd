@@ -2,7 +2,7 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
-:root{
+:root {
   --main-font: 'IBM Plex mono';
   --bg-image:url("../images/cover-image-dark.png");
   --violet:#DB00FF;
