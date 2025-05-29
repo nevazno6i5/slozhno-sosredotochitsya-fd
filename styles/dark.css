@@ -7,20 +7,25 @@
 :root.theme-dark {
   --main-font: 'IBM Plex mono';
   --bg-image:url("../images/cover-image-dark.png");
-  --bg-color: #000028;
   --violet:#DB00FF;
+  --text-color:#FF0070;
   --title-decor:#FF0070;
   --main-text-color: #F1B2CE;
+  --transparent-text: #000028;
 }
 
 .theme-dark .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
-  :root.theme-dark {
+}
+@media(prefers-color-scheme: dark) {
+  :root {
     --main-font: 'IBM Plex mono';
-   --bg-image:url("../images/cover-image-dark.png");
-    --bg-color: #000028;
+    --bg-image:url("../images/cover-image-dark.png");
     --violet:#DB00FF;
+    --text-color:#FF0070;
     --title-decor:#FF0070;
     --main-text-color: #F1B2CE;
+    --transparent-text: #000028;
+  }
 }
-}
+

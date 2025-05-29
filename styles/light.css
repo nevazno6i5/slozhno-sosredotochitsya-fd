@@ -7,7 +7,18 @@
   --main-text-color: #353430;
   --transparent-text:#353430;
 }
-@media(prefers-color-scheme:light) {
+.rec-container {
+    display: none;
+  }
+@media(prefers-color-scheme: light) {
+  :root {
+    --bg-image: url("../images/cover-image-light.png");
+    --violet: #FFC2E6;
+    --title-decor:#FF8DCB;
+    --text-color:#353430;
+    --main-text-color: #353430;
+    --transparent-text:#353430;
+  }
   .rec-container {
     display: none;
   }
