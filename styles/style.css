@@ -113,6 +113,9 @@
     grid-row: 4;
     margin-top: 25px;
 }
+.main {
+    margin-bottom:12px;
+}
 .main-section {
     padding-bottom: 50px;
     margin-top: 30px;
@@ -161,10 +164,11 @@
     margin: 3px auto;
 }
 .footer {
-    position: relative;
+    /*position: relative;*/
     min-height: 668px;
     height: 100%;
     display: flex;
+    flex-wrap:wrap;
     justify-content: center;
     align-items: center;
 }
@@ -175,11 +179,16 @@
     text-shadow: 2px 2px 0 var(--title-decor);
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     align-self: center;
+    justify-self: center;
+    margin-top: 44px;
+}
+.footer-angels-position {
+    position: relative;
 }
 .angels-footer::before {
     content: "";
     position: absolute;
-    bottom: -19px;
+    bottom: -345px;
     border-bottom: var(--title-decor) 1px solid;
     border-left: var(--title-decor) 1px solid;
     block-size: 24px;
@@ -188,8 +197,8 @@
 .angels-footer::after {
     content: "";
     position: absolute;
-    right: 0;
-    top: 40px;
+    right: -350px;
+    top: -300px;
     border-top: var(--title-decor) 1px solid;
     border-right: var(--title-decor) 1px solid;
     block-size: 24px;
@@ -198,6 +207,7 @@
 @media (width >= 768px) {
     .page {
         padding: 20px;
+        padding-left: 0;
     }
     .angels::before {
         position: absolute;
@@ -231,7 +241,10 @@
         height: 117px;
         align-self: end;
         justify-self: end;
-        margin-top: 133px;
+        margin-top: 130px;
+    }
+    .main {
+        padding-left: 20px;
     }
     .main-section {
         display: grid;
@@ -300,19 +313,24 @@
         grid-column: 2 / span 2;
         grid-row: 3;
     }
+    .footer{
+        min-height: 690px;
+    }
     .footer-title {
         font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
         justify-self: center;
+        margin-top:410px;
+        margin-left:20px;
     }
     .angels-footer::after {
         position: absolute;
-        right: 0;
-        top: 66px;
+        right: -566px;
+        top: -290px;
     }
     .angels-footer::before {
         position: absolute;
-        left: 0;
-        bottom: -380px;
+        left: -167px;
+        bottom: -696px;
     }
 }
 @media (width >= 1024px) {
@@ -335,7 +353,7 @@
         left: 39.7%;
     }
     .header-title {
-        margin: 0;
+        margin-top: 10px;
     }
     .header-text {
         width: 491px;
@@ -379,6 +397,16 @@
         margin-right: 0;
     }
     .footer-title {
-        margin-top: 40%;
+        margin-top: 140px;
+    }
+    .angels-footer::after {
+        position: absolute;
+        right: -747px;
+        top: -293px;
+    }
+    .angels-footer::before {
+        position: absolute;
+        left: -237px;
+        bottom: -436px;
     }
 }

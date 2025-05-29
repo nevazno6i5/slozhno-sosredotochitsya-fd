@@ -8,10 +8,10 @@
   --transparent-text:#353430;
 }
 @media(prefers-color-scheme:light) {
-  .rec-container{
+  .rec-container {
     display: none;
   }
-  .main-title{
+  .main-title {
     color:var(--text-color)
   }
 }
