@@ -1,5 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
+body {
+  margin: 0;
+}
 .page {
     /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
     display: grid;
@@ -8,7 +10,7 @@
     background-attachment: fixed;
     font-family: var(--main-font, sans-serif);
     padding: 10px;
-    margin: 0 auto;
+    margin: 0;
 }
 .header {
     display: grid;
@@ -100,7 +102,7 @@
     line-height: 83%;
     color: var(--violet);
     text-shadow: 4px 4px 0 var(--title-decor);
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    /*font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);*/
     grid-row: 3;
     margin-top: 40px;
 }

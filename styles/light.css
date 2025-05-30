@@ -28,7 +28,7 @@
   .main-title {
     color:var(--text-color)
   }
-  .page{
+  .page {
     background-image: var(--bg-image);
   }
 }
