@@ -9,7 +9,10 @@
 }
 .rec-container {
     display: none;
-  }
+}
+.page {
+    background-image: var(--bg-image);
+}
 @media(prefers-color-scheme: light) {
   :root {
     --bg-image: url("../images/cover-image-light.png");
@@ -24,5 +27,8 @@
   }
   .main-title {
     color:var(--text-color)
+  }
+  .page{
+    background-image: var(--bg-image);
   }
 }
