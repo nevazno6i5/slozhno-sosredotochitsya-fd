@@ -114,8 +114,7 @@
     margin-top: 25px;
 }
 .main {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
 }
 .main-section {
     padding-bottom: 50px;
@@ -207,10 +206,6 @@
     inline-size: 24px;
 }
 @media (width >= 768px) {
-    .page {
-        padding: 20px;
-        padding-left: 0;
-    }
     .angels::before {
         position: absolute;
         bottom: 20px;
@@ -230,6 +225,8 @@
         height: 100vh;
         max-height: 1024px;
         grid-template-rows: 1fr min-content 1fr;
+        padding: 20px;
+        padding-left: 0;
     }
     .header__theme-menu {
         grid-row: 1;
@@ -254,7 +251,7 @@
         margin-bottom: 205px;
     }
     .main {
-        padding-left: 20px;
+        padding: 20px;
     }
     .main-section {
         display: grid;
@@ -324,6 +321,7 @@
     .footer {
         height: 100vh;
         max-height: 768px;
+        padding:20px;
     }
     .footer-title {
         font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
