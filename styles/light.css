@@ -8,9 +8,9 @@
   --main-text-color: #353430;
   --transparent-text:#353430;
 }
-.page {
+/*.page {
     background-image: var(--bg-image);
-}
+}*/
 @media(prefers-color-scheme: light) {
   :root {
     --bg-image: url("../images/cover-image-light.png");
