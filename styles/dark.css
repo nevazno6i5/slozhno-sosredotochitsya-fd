@@ -5,25 +5,21 @@
 */
 
 :root.theme-dark {
-  --main-font: 'IBM Plex mono';
   --bg-image:url("../images/cover-image-dark.png");
   --violet:#DB00FF;
   --text-color:#FF0070;
   --title-decor:#FF0070;
+  --shadow-effect:#FF0070;
   --main-text-color: #F1B2CE;
   --transparent-text: #000028;
 }
-
-.theme-dark .page {
-  background-image: var(--bg-image);
-}
 @media(prefers-color-scheme: dark) {
   :root {
-    --main-font: 'IBM Plex mono';
     --bg-image:url("../images/cover-image-dark.png");
     --violet:#DB00FF;
     --text-color:#FF0070;
     --title-decor:#FF0070;
+    --shadow-effect:#FF0070;
     --main-text-color: #F1B2CE;
     --transparent-text: #000028;
   }

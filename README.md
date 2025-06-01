@@ -1,1 +1,1 @@
-git@github.com:nevazno6i5/slozhno-sosredotochitsya-fd.git
+https://github.com/nevazno6i5/slozhno-sosredotochitsya-fd
