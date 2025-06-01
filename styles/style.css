@@ -113,7 +113,9 @@
     padding-bottom: 20px;
     margin-top: 30px;
 }
-.main-section-even,
+.main-section-even {
+    margin: 30px 0 50px 0;
+}
 .main-section-odd {
     margin-bottom: 30px;
 }
@@ -179,7 +181,7 @@
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     align-self: center;
 }
-.corners::before {
+.corners::before::after {
     content: "";
     position: absolute;
     border-bottom: var(--text-color) 1px solid;
@@ -187,14 +189,14 @@
     block-size: 24px;
     inline-size: 24px;
 }
-.corners::after {
+/*.corners::after {
     content: "";
     position: absolute;
     border-top: var(--text-color) 1px solid;
     border-right: var(--text-color) 1px solid;
     block-size: 24px;
     inline-size: 24px;
-}
+}*/
 @media (width >= 768px) {
     .corners::before {
         bottom: 20px;
