@@ -8,9 +8,12 @@
   --main-text-color: #353430;
   --transparent-text:#353430;
 }
-/*.page {
-    background-image: var(--bg-image);
-}*/
+.theme-light .rec-container {
+  display: none;
+}
+.theme-light .page {
+  background-image: var(--bg-image);
+}
 @media(prefers-color-scheme: light) {
   :root {
     --bg-image: url("../images/cover-image-light.png");
@@ -21,7 +24,7 @@
     --main-text-color: #353430;
     --transparent-text:#353430;
   }
-  .rec-container {
+  .theme-light .rec-container {
     display: none;
   }
 }

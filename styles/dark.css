@@ -13,6 +13,9 @@
   --main-text-color: #F1B2CE;
   --transparent-text: #000028;
 }
+.theme-dark .page {
+  background-image: var(--bg-image);
+}
 @media(prefers-color-scheme: dark) {
   :root {
     --bg-image:url("../images/cover-image-dark.png");
