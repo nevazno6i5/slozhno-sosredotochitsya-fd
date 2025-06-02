@@ -12,6 +12,7 @@
   --shadow-effect:#FF0070;
   --main-text-color: #F1B2CE;
   --transparent-text: #000028;
+  --transparent-border:rgba(255, 0, 112, 0.4);
 }
 .theme-dark .page {
   background-image: var(--bg-image);
@@ -25,6 +26,7 @@
     --shadow-effect:#FF0070;
     --main-text-color: #F1B2CE;
     --transparent-text: #000028;
+    --transparent-border:rgba(255, 0, 112, 0.4);
   }
 }
 
