@@ -3,6 +3,7 @@
 .page {
     /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
     display: grid;
+    background-color: var(--background-color);
     background-image: var(--bg-image);
     background-size: cover;
     background-attachment: fixed;
@@ -16,6 +17,9 @@
     height: 100%;
     min-height: 668px;
     padding: 10px;
+}
+.decorated-zone {
+    position: relative;
 }
 .corners::before {
     content: "";
@@ -33,13 +37,13 @@
     right: 10px;
     top: 10px;
     border-top: var(--text-color) 1px solid;
-    border-right: var(---text-color) 1px solid;
+    border-right: var(--text-color) 1px solid;
     block-size: 24px;
     inline-size: 24px;
 }
 .rec-container {
     position: absolute;
-    top: 10px;
+    top: 12px;
     right: 20px;
     font-size: 18px;
     font-weight: 400;
@@ -53,24 +57,24 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    margin-left: 5px;
+    margin-left: 8px;
     background-color: var(--title-decor);
     box-shadow: 0 0 4px 2px var(--title-decor);
 }
 .header__theme-menu {
     display: grid;
     grid-row: 2;
-    margin-top: 30px;
-    margin-right: 6px;
+    margin-top: 35px;
+    justify-content: end;
 }
 .header__theme-menu-list {
     font-weight: 400;
     font-size: 18px;
-    text-align: end;
+    text-align: center;
     color: var(--text-color);
     text-transform: lowercase;
     display: grid;
-    gap: 10px;
+    gap: 9px;
 }
 .header__theme-menu-button {
     background-color: transparent;
@@ -85,10 +89,14 @@
 }
 .header__theme-menu-button:hover {
     border-color: var(--transparent-border);
+    padding-left: 10px;
+    padding-right: 15px;
     cursor: pointer;
 }
 .header__theme-menu-button_active {
     border: 1px solid var(--text-color);
+    padding-left: 10px;
+    padding-right: 15px;
 }
 .header-title {
     line-height: 83%;
@@ -96,7 +104,7 @@
     text-shadow: 4px 4px 0 var(--title-decor);
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     grid-row: 3;
-    margin-top: 40px;
+    margin-top: 36px;
 }
 .header-text {
     background-color: var(--title-decor);
@@ -108,7 +116,7 @@
     margin-top: 25px;
 }
 .main {
-    padding: 10px;
+    padding: 10px 10px 29px 10px ;
     max-width: 100%;
 }
 .main-section {
@@ -155,7 +163,7 @@
     border: 1px solid var(--main-text-color);
 }
 .group-title-galery {
-    margin: 0 0 5px;
+    margin: 0 0 10px;
 }
 .group-title-normal {
     font-weight: normal;
@@ -172,7 +180,6 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    padding: 10px;
 }
 .decorated-zone {
     position: relative;
@@ -185,22 +192,6 @@
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     align-self: center;
 }
-.corners::before::after {
-    content: "";
-    position: absolute;
-    border-bottom: var(--text-color) 1px solid;
-    border-left: var(--text-color) 1px solid;
-    block-size: 24px;
-    inline-size: 24px;
-}
-/*.corners::after {
-    content: "";
-    position: absolute;
-    border-top: var(--text-color) 1px solid;
-    border-right: var(--text-color) 1px solid;
-    block-size: 24px;
-    inline-size: 24px;
-}*/
 @media (width >= 768px) {
     .corners::before {
         bottom: 20px;
@@ -215,9 +206,8 @@
         right: 30px;
     }
     .header {
-        height: 100vh;
-        max-width: 100%;
-        max-height: 1024px;
+        min-height: 1024px;
+        max-height: 100%;
         grid-template-rows: 1fr min-content 1fr;
         padding: 20px 20px 20px 0;
     }
@@ -234,7 +224,7 @@
     .header-title {
         font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
         justify-self: start;
-        margin-top: 90px;
+        margin-top: 79px;
     }
     .header-text {
         max-width: 364px;
@@ -245,7 +235,7 @@
         margin-top: 0;
     }
     .main {
-        padding: 25px 20px;
+        padding: 25px 20px 60px 20px;
     }
     .main-section {
         display: grid;
@@ -269,7 +259,9 @@
     .main-title {
         grid-column: 1;
         align-self: start;
-       /* margin-right: 20px;*/
+    }
+    .section-title {
+        margin-right: 20px;
     }
     .main-title-dofamin {
         margin-top: 35px;
@@ -283,7 +275,7 @@
         grid-column: 2;
     }
     .main-section_galery {
-        margin-top: 55px;
+        margin-top: 59px;
     }
     .section-galery {
         display: grid;
@@ -313,39 +305,36 @@
         grid-row: 3;
     }
     .footer {
-        height: 100vh;
-        max-height: 1024px;
-        padding: 20px;
+        min-height: 1024px;
     }
     .footer-title {
         font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
         justify-self: center;
-        margin-top: 80px;
     }
 }
 @media (width >= 1024px) {
     .header__theme-menu {
         margin: 0;
+        justify-content: center;
+        width: 100%;
+        padding-left: 25px;
     }
     .header {
-        min-height: 768px;
+        max-height: 768px;
+        min-height: 100%;
     }
     .header__theme-menu-list {
         display: flex;
+        max-width: 240px;
         flex-direction: row;
         justify-content: space-between;
-        flex-wrap: nowrap;
-        width: 21%;
-        position: absolute;
-        top: 2.5%;
-        left: 39.5%;
+        gap: 20px;
     }
     .header-title {
-        margin-top: 240px;
+        margin-top: 200px;
     }
     .header-text {
         max-width: 491px;
-        width: 100%;
         margin-top: 85px;
     }
     .div-section {
@@ -358,9 +347,9 @@
         margin-top: 0;
         margin-bottom: 79px;
     }
-    .section-galery {
+    /*.section-galery {
         margin-top: 20px;
-    }
+    }*/
     .main-section_galery,
     .main-section-even {
         margin-top: 60px;
@@ -387,22 +376,7 @@
         margin-right: 20px;
     }
     .footer {
-        max-height: 768px;
-    }
-    .footer-title {
-        margin-top: 70px;
+        min-height: 768px;
     }
 }
-@media (prefers-color-scheme: light) {
-    .main-title {
-        color: var(--text-color);
-    }
-    .page {
-        background-image: var(--bg-image);
-    }
-}
-@media (prefers-color-scheme: dark) {
-    .theme-dark .page {
-        background-image: var(--bg-image);
-    }
-}
+

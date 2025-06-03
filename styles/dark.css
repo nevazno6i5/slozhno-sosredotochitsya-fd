@@ -6,12 +6,13 @@
 
 :root.theme-dark {
   --bg-image:url("../images/cover-image-dark.png");
-  --violet:#DB00FF;
+  --main-color:#DB00FF;
   --text-color:#FF0070;
   --title-decor:#FF0070;
   --shadow-effect:#FF0070;
   --main-text-color: #F1B2CE;
   --transparent-text: #000028;
+  --background-color:   #000028;
   --transparent-border:rgba(255, 0, 112, 0.4);
 }
 .theme-dark .page {
@@ -20,13 +21,20 @@
 @media(prefers-color-scheme: dark) {
   :root {
     --bg-image:url("../images/cover-image-dark.png");
-    --violet:#DB00FF;
+    --main-color:#DB00FF;
     --text-color:#FF0070;
     --title-decor:#FF0070;
     --shadow-effect:#FF0070;
     --main-text-color: #F1B2CE;
     --transparent-text: #000028;
+    --background-color:   #000028;
     --transparent-border:rgba(255, 0, 112, 0.4);
+  }
+  .theme-dark .page {
+      background-image: var(--bg-image);
+  }
+  .section-title {
+      color: var(--text-color);
   }
 }
 

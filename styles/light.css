@@ -7,6 +7,7 @@
   --text-color:#353430;
   --main-text-color: #353430;
   --transparent-text:#353430;
+  --background-color:  #fff1f7;
   --transparent-border:rgba(50, 49, 45, 0.4);
 }
 .theme-light .rec-container {
@@ -24,9 +25,16 @@
     --text-color:#353430;
     --main-text-color: #353430;
     --transparent-text:#353430;
+    --background-color:  #fff1f7;
     --transparent-border:rgba(50, 49, 45, 0.4);
   }
-  .theme-light .rec-container {
+  .rec-container {
     display: none;
+  }
+  .section-title {
+      color: var(--text-color);
+  }
+  .page {
+        background-image: var(--bg-image);
   }
 }
