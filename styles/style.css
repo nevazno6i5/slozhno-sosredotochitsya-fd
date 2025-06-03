@@ -181,9 +181,6 @@
     display: flex;
     justify-content: center;
 }
-.decorated-zone {
-    position: relative;
-}
 .footer-title {
     font-weight: 700;
     line-height: 83%;
