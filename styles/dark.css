@@ -18,6 +18,9 @@
 .theme-dark .page {
   background-image: var(--bg-image);
 }
+.theme-dark .rec-container {
+    display: block;
+}
 @media(prefers-color-scheme: dark) {
   :root {
     --bg-image:url("../images/cover-image-dark.png");
